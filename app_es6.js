@@ -120,9 +120,9 @@ document.getElementById('book-form').addEventListener('submit', function(e) {
     console.log(ui);
 
     // Validate
-    if (title === '' || author === '' || isbn === '') {
+    if (title === '') {
         // Error alert
-        ui.showAlert('Please fill in all fields', 'error');
+        ui.showAlert('Please fill The Title of the Book', 'error');
     } else {
         // Add book to list
         ui.addBookToList(book);
